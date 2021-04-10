@@ -1,10 +1,10 @@
-import React from "react"
-import { Image, ImageStyle, Platform, TextStyle, View, ViewStyle } from "react-native"
 import { useNavigation } from "@react-navigation/native"
 import { observer } from "mobx-react-lite"
-import { BulletItem, Button, Header, Text, Screen, Wallpaper } from "../../components"
-import { color, spacing } from "../../theme"
+import React from "react"
+import { Image, ImageStyle, Platform, TextStyle, View, ViewStyle } from "react-native"
+import { BulletItem, Button, Header, Screen, Text, Wallpaper } from "../../components"
 import { Api } from "../../services/api"
+import { color, spacing } from "../../theme"
 import { save } from "../../utils/storage"
 export const logoIgnite = require("./logo-ignite.png")
 export const heart = require("./heart.png")
@@ -77,7 +77,7 @@ const HINT: TextStyle = {
   marginVertical: spacing[2],
 }
 
-export const DemoScreen = observer(function DemoScreen() {
+export const DemoScreen: React.FC = observer(function() {
   const navigation = useNavigation()
   const goBack = () => navigation.goBack()
 
