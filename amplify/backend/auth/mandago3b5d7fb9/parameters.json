@@ -1,0 +1,43 @@
+{
+  "identityPoolName": "mandago3b5d7fb9_identitypool_3b5d7fb9",
+  "allowUnauthenticatedIdentities": false,
+  "resourceNameTruncated": "mandag3b5d7fb9",
+  "userPoolName": "mandago3b5d7fb9_userpool_3b5d7fb9",
+  "autoVerifiedAttributes": ["email"],
+  "mfaConfiguration": "OFF",
+  "mfaTypes": ["SMS Text Message"],
+  "smsAuthenticationMessage": "Your authentication code is {####}",
+  "smsVerificationMessage": "Your verification code is {####}",
+  "emailVerificationSubject": "Your verification code",
+  "emailVerificationMessage": "Your verification code is {####}",
+  "defaultPasswordPolicy": false,
+  "passwordPolicyMinLength": 8,
+  "passwordPolicyCharacters": [],
+  "requiredAttributes": ["email"],
+  "userpoolClientGenerateSecret": false,
+  "userpoolClientRefreshTokenValidity": 30,
+  "userpoolClientWriteAttributes": ["email"],
+  "userpoolClientReadAttributes": ["email"],
+  "userpoolClientLambdaRole": "mandag3b5d7fb9_userpoolclient_lambda_role",
+  "userpoolClientSetAttributes": false,
+  "sharedId": "3b5d7fb9",
+  "resourceName": "mandago3b5d7fb9",
+  "authSelections": "identityPoolAndUserPool",
+  "authRoleArn": {
+    "Fn::GetAtt": ["AuthRole", "Arn"]
+  },
+  "unauthRoleArn": {
+    "Fn::GetAtt": ["UnauthRole", "Arn"]
+  },
+  "useDefault": "default",
+  "usernameAttributes": ["email"],
+  "triggers": "{}",
+  "userPoolGroupList": [],
+  "serviceName": "Cognito",
+  "usernameCaseSensitive": false,
+  "parentStack": {
+    "Ref": "AWS::StackId"
+  },
+  "permissions": [],
+  "dependsOn": []
+}

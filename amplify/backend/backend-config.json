@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "mandago3b5d7fb9": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

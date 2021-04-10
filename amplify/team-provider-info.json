@@ -10,6 +10,11 @@
       "StackName": "amplify-mandago-dev-120250",
       "StackId": "arn:aws:cloudformation:eu-west-2:414192281580:stack/amplify-mandago-dev-120250/4b72abf0-99ec-11eb-b3b7-024fe784c338",
       "AmplifyAppId": "deg09114ujtjs"
+    },
+    "categories": {
+      "auth": {
+        "mandago3b5d7fb9": {}
+      }
     }
   }
 }
